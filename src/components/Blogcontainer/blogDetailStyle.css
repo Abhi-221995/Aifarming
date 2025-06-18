@@ -1,0 +1,45 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.blogDetailContainerMain{
+    width: 100%;
+}
+.blogcontainerhead{
+    width: 100%;
+    height: auto;
+}
+.blogDetailsHeader{
+    width: 100%;
+    height: 40vh;
+    background-color: rgba(122, 231, 13, 0.4);
+    padding-top: 50px;
+}
+.detailsHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 40px 100px 40px 100px;
+}
+
+.blogDetailsBody{
+    width: 100%;
+    height: auto;
+    padding: 50px 150px 50px 150px
+}
+.blogBodyImageContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media (max-width: 768px){
+    
+}

@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+.containerHome{
+    width: 100%;
+    padding: 0px;
+}
+
+.heroSection{
+    width: 100%;
+    height: 100vh;
+    background-image: url("./src/assets/banner-image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.heroTitle{
+    padding: 200px 100px 0px 150px;
+}
+.urban{
+    width: 200px;
+    height: 25px;
+    background-color: rgba(255, 255, 255,0.3);
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(122, 231, 13);
+}
+.urban p{
+    padding: 5px;
+}
+.mainTitle{
+    font-size: xx-large;
+    color: #fff;
+}
+.gredents{
+    background-image: linear-gradient(30deg, rgba(179, 230, 75,0.7),rgba(179, 230, 75,0.8),rgba(179, 230, 75,1));
+    color: black;
+}
+.titlePara{
+    font-size: large;
+    padding-top: 10px;
+}
+.heroButtons{
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+}
+.navRight1{
+    display: flex;
+    width: 200px;
+    height: 40px;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.navRight1 a{
+    text-decoration: none;
+}
+.navRight1:hover{
+  background-color: rgb(122, 231, 13);
+  color: #333;
+}
+.navRight2{
+    display: flex;
+    width: 150px;
+    height: 40px;
+    background-color: rgb(122, 231, 13);
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.navRight2 a{
+    text-decoration: none;
+}
+.navRight2:hover{
+  background-color: #333;
+  color: #fff;
+}
+.navRight2 a:hover{
+    color: rgb(122, 231, 13);
+}
+
+.statsContainer{
+    display: flex;
+    gap: 50px;
+    padding-top: 30px;
+    text-align: center;
+}
+.statItem{
+    color: rgba(76, 175, 80,0.2);
+}
+.number {
+    font-size: 4em; 
+    font-weight: 700; 
+    -webkit-text-stroke: 2px rgb(122, 231, 13);
+}
+.description {
+    font-size: 1.2em;
+    font-weight: 400; 
+    color: rgb(122, 231, 13);
+}
+
+@media (max-width: 768px){
+   .heroTitle{
+    padding: 100px 20px 0px 20px;
+   }
+   .mainTitle{
+    font-size: large;
+    padding-top: 10px;
+   }
+   .heroButtons{
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 10px;
+   }
+   
+}

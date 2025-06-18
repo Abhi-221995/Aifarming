@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.flowContainer{
+    width: 100%;
+    padding-top: 50px;
+}
+.flowHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.flowcard{
+    width: 180px;
+    height: 30px;
+    background-color: rgba(122, 231, 13,0.5);
+    color: #333;
+    border-radius: 15px;
+    padding: 5px;
+}
+.flowContent{
+    padding-top: 30px;
+    font-size: x-large;
+}
+.gredents{
+    background-image: linear-gradient(45deg, rgba(122, 231, 13,0.1),rgba(122, 231, 13,0.3),rgba(122, 231, 13,0.8));
+    color: black;
+}
+.flowPara{
+    padding-top: 30px;
+    font-size: large;
+}
+
+@media (max-width: 768px){
+    .flowContent{
+        font-size: large;
+    }
+    .flowPara{
+        font-size: medium;
+    }
+}

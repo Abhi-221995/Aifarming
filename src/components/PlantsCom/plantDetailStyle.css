@@ -1,0 +1,122 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.plantDetailContainer {
+    width: 100%;
+    height: auto;
+}
+
+.plantDetailHeader {
+    width: 100%;
+    height: 40vh;
+    background-color: rgba(122, 231, 13, 0.2);
+}
+
+.plantDeatilsHero{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;    
+}
+
+.plantDetailsBody{
+    width: 100%;
+    height: auto;
+    padding: 20px 100px 20px 100px;
+}
+.plantimage{
+    width: 30%;
+    padding: 20px;
+}
+.plantimginner{
+    width: 90%;
+}
+.plantDetailsDesc{
+    display: flex;
+    gap: 20px;
+}
+
+.plantDetailinnerContainer{
+    display: flex;
+    gap: 30px;
+    padding-top: 50px;
+}
+
+.plantInformation{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.plantAdvInfromation{
+    padding-top: 30px;
+}
+
+.plantAdvInfoContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 20px;
+}
+.plantdetailCard{
+    width: 33%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),  
+              0 -4px 8px rgba(0, 0, 0, 0.05),  
+              4px 0 8px rgba(0, 0, 0, 0.05),   
+             -4px 0 8px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 10px;
+}
+.plantSeedContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.plantinnerseed{
+    display: flex;
+    gap: 5px;
+}
+.plantDetailsPara{
+    color: rgb(123, 127, 116);
+    padding: 5px 0px 5px 0px;
+}
+
+@media (max-width: 768px){
+     .plantDetailsDesc{
+        width: 100%;
+        flex-direction: column;
+     }
+     .plantDetailsBody{
+       padding: 20px 10px 20px 10px;
+     }
+     .plantimage{
+        width: 100%;
+     }
+     .plantdetailName{
+        padding-left: 30px;
+     }
+     .plantimginner{
+        width: 100%;
+        height: auto;
+     }
+     .plantAdvInfoContainer{
+        flex-direction: column;
+     }
+     .plantdetailCard{
+        width: 100%;
+     }
+     .plantDetailinnerContainer{
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 30px;
+     }
+}

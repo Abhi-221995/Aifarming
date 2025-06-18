@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cardContainer{
+    width: 100%;
+    padding-top: 20px ;
+}
+
+.cardsItem{
+    display: flex;
+    gap: 10px;
+    padding: 10px 150px 20px 150px;
+}
+.cardImage{
+    width: 50%;
+    overflow: hidden;
+}
+.imageSize{
+    width: 100%;
+    display: block;
+}
+.cardDescription{
+    width: 50%;
+}
+.cardReversed{
+    flex-direction: row-reverse;
+}
+.numberHeading{
+    -webkit-text-stroke: 2px green;
+    color: #fff;
+    font-size: 60px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.headImage{
+    position: relative;
+    top: -40px;
+    left: 73px;
+}
+.cardSubheading{
+    font-size: xx-large;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.cardParagraph{
+    font-size: x-large;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #8d7f7f;
+}
+.cardButtondiv{
+    padding: 15px 0px 20px 30px; 
+}
+.cardButton{
+    display: flex;
+    gap: 10px;
+    width: 125px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(122, 231, 13);
+    padding: 3px 5px 5px 5px;
+   
+}
+
+.buttonText{
+    padding-top: 8px;
+    
+}
+
+.arrow1{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(122, 231, 13);
+}
+.imgArrow1{
+    width: 40px;
+    height: 40px;
+}
+
+.cardButton:hover{
+    background-color: #333;
+    color: #fff;
+}
+.iconcolor{
+    -webkit-text-stroke: 2px lightblue;
+}
+
+.partnerContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 70px;
+    background-color: rgba(216, 225, 199,0.2);
+}
+.imgiconsouter{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(122, 231, 13, 0.5);
+}
+.partnerImage{
+    width: 45%;
+    padding: 80px 0px 80px 150px;
+    border-radius: 20px;
+}
+.partnerImage1{
+    width: 100%;
+    height: 600px;
+    border: 5px solid #fff;
+    border-radius: 20px;
+}
+.partnerDesc{
+    padding-top: 90px;
+}
+.descUp{
+    width: 200px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color:rgba(122, 231, 13,0.5);
+    padding: 5px;
+    text-align: center;
+}
+
+.descHeader{
+    font-size:large;
+    padding-top: 20px;
+}
+.descHeaderPara{
+    padding-top: 10px;
+    color: rgb(123, 127, 116);
+}
+.descriptionCards{
+    display: flex;
+    gap: 25px;
+    padding-top: 30px;
+}
+.CardsHeading{
+    padding: 20px 0px 20px 0px;
+    font-size: x-large;
+}
+.CardsDescription{
+    padding-bottom: 40px;
+    font-size: larger;
+    color: rgb(123, 127, 116);
+}
+@media (max-width: 768px){
+    .cardsItem{
+        flex-direction: column;
+        padding: 10px 10px 10px 10px;
+    }
+    .cardImage{
+        width: 100%;
+    }
+    .imageSize{
+        width: 100%;
+    }
+    .cardDescription{
+        width: 100%;
+    }
+    .numberHeading{
+        font-size: 40px;
+    }
+    .cardSubheading{
+        font-size: x-large;
+    }
+    .cardParagraph{
+        font-size: large;
+    }
+    .headImage{
+        left: 60px;
+    }
+   .partnerDesc{
+    padding-left: 20px;
+   }
+    .partnerContainer{
+        flex-direction: column;
+        gap: 5px;
+    }
+    .partnerImage{
+        width: 100%;
+        padding: 40px 20px 0px 20px
+    }
+    .descriptionCards{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 20px 0px 20px;
+    }
+    .imgiconsouter{
+       margin-left: 38%;
+    }
+   
+}

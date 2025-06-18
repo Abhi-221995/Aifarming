@@ -1,0 +1,71 @@
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.plantHomeContainer{
+    width: 100%;
+    padding-top: 20px;
+}
+
+.plantHomeHeader{
+    width: 100%;
+    padding: 40px 150px 20px 150px;
+}
+.plantHeaderText{
+    padding: 30px 0px 30px 0px;
+}
+.plantsuperHeader{
+    width: 160px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgba(122, 231, 13,0.5);
+    padding: 5px;
+    text-align: center;
+}
+.plantHeaderLower{
+    display: flex;
+    gap: 400px;
+    padding-top: 20px;
+    font-size: large;
+    color: rgb(123, 127, 116);
+}
+
+.aiMarketPlace{
+    width: 100%;
+    height: 450px;
+    background-image:url("./src/assets/neighborhood-img.png");
+    box-shadow: inset 0 0 0 100vw rgba(0,0,0, 0.6);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 0px 80px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+}
+.gredents{
+    background-image: linear-gradient(45deg, rgba(179, 230, 75,0.3),rgba(179, 230, 75,0.6),rgba(179, 230, 75,1));
+    color: black;
+}
+@media (max-width: 768px){
+    .plantHomeHeader{
+     padding: 40px 10px 20px 10px;
+    }
+    .plantHeaderText{
+        font-size: large;
+    }
+    .plantHeaderLower{
+        flex-direction: column;
+        gap: 20px;
+    }
+}

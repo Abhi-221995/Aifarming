@@ -1,0 +1,122 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.footerContainer{
+    width: 100%;
+    padding-top: 20px;
+}
+.footerHeader{
+    width: 100%;
+    height: 450px;
+    background-image:url("./src/assets/back.png");
+    box-shadow: inset 0 0 0 100vw rgba(0,0,0, 0.6);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 0px 80px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footeruperHeader{
+    width: 160px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(179, 230, 75);
+    padding: 5px;
+    text-align: center;
+}
+
+.footerLinks{
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 80px;
+    padding: 50px 150px 20px 150px;
+}
+.footerCard{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footerlogo{
+    width: 200px;
+}
+.footerNavbar{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footerNavBarUl{
+    list-style: none;
+    
+}
+.footerNavBarUl li{
+    padding-top: 10px;
+}
+.footerNavBarUl li a{
+ text-decoration: none;
+ color: black;
+}
+
+.footerCard{
+    width: 35%;
+}
+.footerCommon{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footerCopyRight{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 150px 20px 150px;
+}
+.footerPolicy{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.footerBottom{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 110px;
+    padding: 20px 150px -10px 150px;
+}
+
+@media (max-width: 768px){
+    .footerLinks{
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 10px 20px 10px;
+    }
+    .footerCard{
+        width: 100%;
+    }
+    .footerCopyRight{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+        padding: 20px 10px 20px 10px;
+    }
+    .footerBottom{
+        font-size: xx-large;
+         padding: 20px 10px 20px 10px;
+    }
+    .footerPolicy{
+        justify-content: center;
+        gap: 10px;
+    }
+}

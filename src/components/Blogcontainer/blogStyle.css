@@ -1,0 +1,112 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.blogMainContainer{
+    width: 100%;
+    height: auto;
+}
+.blogMainHeader{
+    width: 100%;
+    height: 38vh;
+    background-color: rgba(216, 225, 199, 0.5);
+    padding-top: 50px;
+}
+.blogHeaderCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 50px;
+}
+.blogBodyContainer{
+    padding: 20px 150px 20px 150px;
+}
+.blogImage{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+.imageblogs{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px; 
+    margin-bottom: 40px; 
+    padding: 0px 150px 0px 150px;
+}
+
+.pagination-button {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.pagination-button:hover:not(:disabled) {
+    background-color: #e0e0e0;
+    border-color: #ccc;
+}
+
+.pagination-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.pagination-arrow {
+    width: 20px; /* Adjust arrow size */
+    height: 20px;
+    vertical-align: middle;
+}
+
+.pagination-numbers {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 8px; /* Space between page numbers */
+}
+
+.pagination-number-button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #555;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.pagination-number-button:hover:not(.active) {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.pagination-number-button.active {
+    background-color: rgb(122, 231, 13);
+    color: white;
+    border-color: rgb(122, 231, 13);
+    cursor: default;
+}
+
+
+
+@media (max-width: 768px){
+    .blogBodyContainer{
+        padding: 20px 10px 20px 10px;
+    }
+}
