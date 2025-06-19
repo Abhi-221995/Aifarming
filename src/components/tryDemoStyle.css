@@ -1,0 +1,56 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.demoMainContainer{
+    width: 100%;
+    height: auto; 
+}
+.demologinContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+}
+
+.demoCard{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),  
+              0 -4px 8px rgba(0, 0, 0, 0.05),  
+              4px 0 8px rgba(0, 0, 0, 0.05),   
+             -4px 0 8px rgba(0, 0, 0, 0.05);
+    padding: 50px;
+}
+.emailInput{
+    width: 300px;
+    height: 35px;
+}
+.demobtn{
+    width: 300px;
+    height: 35px;
+    margin-top: 20px;
+    background-color: rgb(142, 127, 130);
+    border: none;
+    border-radius: 10px;
+}
+.demobtn:hover{
+    background-color: rgb(122, 231, 13);
+    color: #fff;
+}
+@media (max-width: 768px){
+    .demoCard{
+        width: 90%;
+        padding: 10px;
+    }
+}
