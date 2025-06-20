@@ -1,8 +1,18 @@
+import { useEffect } from 'react';
 import Navbar from '../Navbar';
 import Footer from '../footer/Footer';
 import PlantCard from './PlantCard';
 import './StylePlant.css'
 function Plants() {
+
+    useEffect(() => {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth"
+        });
+      }, []);
+
     return (
         <div className="PlantContainer">
             <div className="headerPlants">

@@ -22,14 +22,19 @@ function BlogDetails() {
             }
         }
     }, [id, blogdata, currentBlog, setSelectedBlog]);
-
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+        });
+    }, []);
 
     return (
         <div className="blogDetailContainerMain">
             <div className='blogcontainerhead'>
-                
                 <div className="blogDetailsHeader">
-                    <Navbar/>
+                    <Navbar />
                     <div className='detailsHeader'>
                         <h1>{currentBlog.blogheading1}</h1>
                         <p>{currentBlog.blogdesc}</p>
@@ -51,7 +56,6 @@ function BlogDetails() {
                     </div>
                 </div>
             </div>
-           
             <div>
                 <Footer />
             </div>

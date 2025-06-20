@@ -3,12 +3,20 @@ import Footer from "../footer/Footer"
 import './blogStyle.css'
 import './blogHomeStyle.css'
 import { PlantContext } from '../Contextapi/PlantContext'
-import { useContext, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { useNavigate, NavLink } from 'react-router-dom';
 function Blog() {
     
     const { blogdata, setselectedBlog } = useContext(PlantContext);
     const [currentPage, setCurrentPage] = useState(1);
+
+    useEffect(() => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      }, []);
+
     const postPerPage =9;
 
     const totalPages = Math.ceil(blogdata.length / postPerPage);

@@ -9,23 +9,32 @@ import ContactCard from './Contact/ContactCard';
 import BlogHome from './Blogcontainer/BlogHome';
 function Home() {
   const [farmersCount, setFarmersCount] = useState(0);
-  const[availablePlants, setAvailablePlants]=useState(0)
+  const [availablePlants, setAvailablePlants] = useState(0);
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    });
+  }, []);
+
   useEffect(() => {
     for (let i = 0; i < 101; i++) {
       setTimeout(() => {
         setFarmersCount(i);
-      }, i*10)
+      }, i * 10)
     }
   }, []);
-  
-   useEffect(() => {
+
+  useEffect(() => {
     for (let i = 0; i < 51; i++) {
       setTimeout(() => {
         setAvailablePlants(i);
-      }, i*10)
+      }, i * 10)
     }
   }, []);
-  
+
 
   return (
     <div className="containerHome">
@@ -74,10 +83,10 @@ function Home() {
       </div>
       <div>
         <Flow />
-        <PlantHome/>
-        <BlogHome/>
-        <ContactCard/>
-        <Footer/>
+        <PlantHome />
+        <BlogHome />
+        <ContactCard />
+        <Footer />
       </div>
     </div>
   )

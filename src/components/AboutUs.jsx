@@ -11,30 +11,39 @@ import ArrowImg from '../assets/aboutusimg/arrow-icon.png'
 import { useState, useEffect } from "react"
 function AboutUs() {
   const [farmersCount, setFarmersCount] = useState(0);
-  const[availablePlants, setAvailablePlants]=useState(0);
-  const[ratio,setRatio]= useState(0);
-    useEffect(() => {
-      for (let i = 0; i < 101; i++) {
-        setTimeout(() => {
-          setFarmersCount(i);
-        }, i*100)
-      }
-    }, []);
-    
-     useEffect(() => {
-      for (let i = 0; i < 51; i++) {
-        setTimeout(() => {
-          setAvailablePlants(i);
-        }, i*100)
-      }
-    }, []);
-    useEffect(() => {
-      for (let i = 0; i < 98; i++) {
-        setTimeout(() => {
-          setRatio(i);
-        }, i*100)
-      }
-    }, []);
+  const [availablePlants, setAvailablePlants] = useState(0);
+  const [ratio, setRatio] = useState(0);
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    });
+  }, []);
+
+  useEffect(() => {
+    for (let i = 0; i < 101; i++) {
+      setTimeout(() => {
+        setFarmersCount(i);
+      }, i * 100)
+    }
+  }, []);
+
+  useEffect(() => {
+    for (let i = 0; i < 51; i++) {
+      setTimeout(() => {
+        setAvailablePlants(i);
+      }, i * 100)
+    }
+  }, []);
+  useEffect(() => {
+    for (let i = 0; i < 98; i++) {
+      setTimeout(() => {
+        setRatio(i);
+      }, i * 100)
+    }
+  }, []);
   return (
     <div className="aboutusMainContainer">
       <div className="aboutusContainer">

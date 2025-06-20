@@ -11,6 +11,13 @@ function PlantDetails() {
     const [currentPlant, setCurrentPlant] = useState(selectedPlant);
 
     useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }, []);
+
+    useEffect(() => {
           console.log(currentPlant , id)
         if (!currentPlant && id) {
             

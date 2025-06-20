@@ -2,7 +2,15 @@ import Navbar from "./Navbar"
 import Footer from "./footer/Footer"
 import ContactCard from "./Contact/ContactCard"
 import './contactUsStyle.css'
+import { useEffect } from "react";
 function ContactUs() {
+     useEffect(() => {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth"
+        });
+      }, []);
     return (
         <div className="contactHomeContainer">
             <div className="contactUsHeader">

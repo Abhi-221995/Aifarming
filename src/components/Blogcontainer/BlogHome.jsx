@@ -29,7 +29,7 @@ function BlogHome() {
                     <div className="plantHeaderButtton">
                         <NavLink to='/Blog' style={{ textDecoration: "none" }}>
                             <button className='cardButton' style={{ gap: "22px" }}>
-                                <div className='buttonText'> <p>All Posts</p></div>
+                                <div className='buttonText'> <p>All Blogs</p></div>
                                 <div className='arrow1'>
                                     <img className='imgArrow1' src="./src/assets/arrow-right.png" alt="" />
                                 </div>
