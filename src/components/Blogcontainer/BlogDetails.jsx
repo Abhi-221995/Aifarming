@@ -40,6 +40,9 @@ function BlogDetails() {
                         <p>{currentBlog.blogdesc}</p>
                     </div>
                 </div>
+                <div>
+                    <p style={{padding:"30px 0px 20px 150px"}}><a href="/Blog">All Blogs</a></p>
+                </div>
                 <div className='blogDetailsBody'>
                     <div className='blogBodyImageContainer'>
                         <img src={currentBlog.blogimg1} alt="blogimage" />

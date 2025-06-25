@@ -51,7 +51,7 @@ function PlantDetails() {
             </div>
             <div className="plantDetailsBody">
                 <div className="plantDetailsUpperlinks">
-                   
+                   <p style={{padding:"20px"}}><a href="/Plants">Plant list</a> | Plant details</p>
                 </div>
                 <div className="plantDetailsDesc">
                     <div className="plantimage">
