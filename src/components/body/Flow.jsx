@@ -1,4 +1,4 @@
-import './flowstyle.css'
+import './flowStyle.css'
 import Cards from './Cards'
 function Flow(){
     const data=[
