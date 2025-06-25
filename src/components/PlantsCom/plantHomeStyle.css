@@ -38,7 +38,7 @@
 .aiMarketPlace{
     width: 100%;
     height: 450px;
-    background-image:url("./src/assets/neighborhood-img.png");
+    /* background-image:url("./src/assets/neighborhood-img.png"); */
     box-shadow: inset 0 0 0 100vw rgba(0,0,0, 0.6);
     background-repeat: no-repeat;
     background-position: center;

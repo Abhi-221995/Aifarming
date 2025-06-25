@@ -1,10 +1,14 @@
-import './flowStyle.css'
-import Cards from './Cards'
+import './flowStyle.css';
+import Cards from './Cards';
+import Step1 from '../../assets/step1.png';
+import Step2 from '../../assets/step2.png';
+import Step3 from '../../assets/step3.png';
+import Step4 from '../../assets/step4.png';
 function Flow(){
     const data=[
         {
             id: 1,
-            image: './src/assets/step1.png',
+            image: Step1,
             image2: 'https://aifarming.ca/wp-content/uploads/2025/01/step1.png',
             heading:"01",
             subheading:"Sign Up with your location",
@@ -12,7 +16,7 @@ function Flow(){
         },
         {
             id: 2,
-            image:  './src/assets/step2.png',
+            image:  Step2,
             image2: 'https://aifarming.ca/wp-content/uploads/2025/01/step2.png',
             heading:"02",
             subheading:"Sign Up with your location",
@@ -20,7 +24,7 @@ function Flow(){
         },
          {
             id: 3,
-            image: './src/assets/step3.png',
+            image: Step3,
             image2: 'https://aifarming.ca/wp-content/uploads/2025/01/step3.png',
             heading:"03",
             subheading:"Manage everything at one place",
@@ -28,7 +32,7 @@ function Flow(){
         },
         {
             id: 4,
-            image:  './src/assets/step4.png',
+            image:  Step4,
             image2: 'https://aifarming.ca/wp-content/uploads/2025/01/step4.png',
             heading:"04",
             subheading:"Receive Regular Instructions",

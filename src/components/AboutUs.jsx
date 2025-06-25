@@ -2,12 +2,14 @@ import Navbar from "./Navbar";
 import { NavLink } from "react-router-dom";
 import Footer from './footer/Footer';
 import './aboutusStyle.css';
-import FarmingRoof from '../assets/aboutusimg/farming-at-roof-img.png'
-import FarmingWater from '../assets/aboutusimg/farming-water-img.png'
-import Gardening from '../assets/aboutusimg/gardening-img.png'
-import Garder from '../assets/aboutusimg/garder-img.png'
-import Image1 from '../assets/aboutusimg/image-1.png'
-import ArrowImg from '../assets/aboutusimg/arrow-icon.png'
+import FarmingRoof from '../assets/aboutusimg/farming-at-roof-img.png';
+import FarmingWater from '../assets/aboutusimg/farming-water-img.png';
+import Gardening from '../assets/aboutusimg/gardening-img.png';
+import Garder from '../assets/aboutusimg/garder-img.png';
+import Image1 from '../assets/aboutusimg/image-1.png';
+import ArrowImg from '../assets/aboutusimg/arrow-icon.png';
+import ArrowRight from '../assets/arrow-right.png';
+import practices from '../assets/aboutusimg/image.png'
 import { useState, useEffect } from "react"
 function AboutUs() {
   const [farmersCount, setFarmersCount] = useState(0);
@@ -68,7 +70,7 @@ function AboutUs() {
                 <button className='cardButton' style={{ gap: "22px" }}>
                   <div className='buttonText'> <p>All Posts</p></div>
                   <div className='arrow1'>
-                    <img className='imgArrow1' src="./src/assets/arrow-right.png" alt="" />
+                    <img className='imgArrow1' src={ArrowRight}/>
                   </div>
                 </button>
               </NavLink>
@@ -95,7 +97,7 @@ function AboutUs() {
       <div className="aboutusProducts">
         <div className="aboutusPractices">
           <div className="practiceimgCont">
-            <img className="practiceImage" src="../src/assets/aboutusimg/image.png" alt="practices" />
+            <img className="practiceImage" src={practices} alt="practices" />
           </div>
           <div className="practiceimgDesc">
             <h2>Ready to revolutionize your <br /> farming practices?</h2>
@@ -122,7 +124,7 @@ function AboutUs() {
               <button className='cardButton' style={{ gap: "22px" }}>
                 <div className='buttonText'> <p>Join Now</p></div>
                 <div className='arrow1'>
-                  <img className='imgArrow1' src="./src/assets/arrow-right.png" alt="" />
+                  <img className='imgArrow1' src={ArrowRight}/>
                 </div>
               </button>
             </NavLink>

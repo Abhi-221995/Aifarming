@@ -1,6 +1,8 @@
-import PlantCard from "./PlantCard"
-import { NavLink } from "react-router-dom"
-import './plantHomeStyle.css'
+import PlantCard from "./PlantCard";
+import { NavLink } from "react-router-dom";
+import './plantHomeStyle.css';
+import ArrowImage from '../../assets/arrow-right.png';
+import Neighborehood from '../../assets/neighborhood-img.png';
 function PlantHome() {
     
     return (
@@ -19,7 +21,7 @@ function PlantHome() {
                             <button className='cardButton'style={{gap: "22px"}}>
                                 <div className='buttonText'> <p>All   Plants</p></div>
                                 <div className='arrow1'>
-                                    <img className='imgArrow1' src="./src/assets/arrow-right.png" alt="" />
+                                    <img className='imgArrow1' src={ArrowImage} />
                                 </div>
                             </button>
                         </NavLink>
@@ -29,7 +31,7 @@ function PlantHome() {
             <div>
                 <PlantCard  cardlength={4}/> 
             </div>
-            <div className="aiMarketPlace">
+            <div className="aiMarketPlace" style={{backgroundImage:`url(${Neighborehood})`}}>
                 <div className="plantsuperHeader" style={{width:"200px", backgroundColor:"rgb(179, 230, 75)"}}>
                     <p style={{color:"black"}}>AI farming marketplace</p>
                 </div>

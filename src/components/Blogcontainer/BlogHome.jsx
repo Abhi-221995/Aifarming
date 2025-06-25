@@ -2,6 +2,7 @@ import './blogHomeStyle.css'
 import { PlantContext } from '../Contextapi/PlantContext';
 import { useContext } from 'react';
 import { useNavigate, NavLink } from 'react-router-dom';
+import ArrowImage from '../../assets/arrow-right.png'
 function BlogHome() {
 
     const { blogdata, setselectedBlog } = useContext(PlantContext);
@@ -31,7 +32,7 @@ function BlogHome() {
                             <button className='cardButton' style={{ gap: "22px" }}>
                                 <div className='buttonText'> <p>All Blogs</p></div>
                                 <div className='arrow1'>
-                                    <img className='imgArrow1' src="./src/assets/arrow-right.png" alt="" />
+                                    <img className='imgArrow1' src={ArrowImage} />
                                 </div>
                             </button>
                         </NavLink>
@@ -57,7 +58,7 @@ function BlogHome() {
                                     <button className='cardButton'onClick={() => handleblogDetails(item)} style={{ gap: "20px", width:"130px" }}>
                                         <div className='buttonText'> <p>Read More</p></div>
                                         <div className='arrow1'>
-                                            <img className='imgArrow1' src="./src/assets/arrow-right.png" alt="arrow" />
+                                            <img className='imgArrow1' src={ArrowImage} alt="arrow" />
                                         </div>
                                     </button>
                                 </div>

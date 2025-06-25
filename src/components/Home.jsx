@@ -7,6 +7,8 @@ import PlantHome from './PlantsCom/PlantHome';
 import Footer from './footer/Footer';
 import ContactCard from './Contact/ContactCard';
 import BlogHome from './Blogcontainer/BlogHome';
+import BannerImage from '../assets/banner-image.png';
+import ArrowImage from '../assets/arrow-right.png';
 function Home() {
   const [farmersCount, setFarmersCount] = useState(0);
   const [availablePlants, setAvailablePlants] = useState(0);
@@ -38,7 +40,7 @@ function Home() {
 
   return (
     <div className="containerHome">
-      <div className="heroSection">
+      <div className="heroSection" style={{backgroundImage:`url(${BannerImage})`}}>
         <Navbar />
         <div className='heroTitle'>
           <div className='urban'>
@@ -56,7 +58,7 @@ function Home() {
               <NavLink className='tryDemo' to="/TryDemo">
                 <div className='demoText'>Try our demo</div>
                 <div className='arrow'>
-                  <img className='imgArrow' src="./src/assets/arrow-right.png" alt="" />
+                  <img className='imgArrow' src={ArrowImage}  />
                 </div>
               </NavLink>
             </div>
@@ -64,7 +66,7 @@ function Home() {
               <NavLink className='tryDemo' to="/Plants">
                 <div className='demoText'>All plant information</div>
                 <div className='arrow'>
-                  <img className='imgArrow' src="./src/assets/arrow-right.png" alt="" />
+                  <img className='imgArrow' src={ArrowImage} />
                 </div>
               </NavLink>
             </div>

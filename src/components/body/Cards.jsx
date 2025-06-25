@@ -1,5 +1,6 @@
 import {NavLink} from 'react-router-dom'
 import './cardsStyle.css'
+import ArrowImage from '../../assets/arrow-right.png'
 function Cards({data}){
     return(
         <div className="cardContainer">
@@ -21,7 +22,7 @@ function Cards({data}){
                    <button className='cardButton'>
                     <div className='buttonText'> <p>Get Started</p></div>
                     <div className='arrow1'>
-                    <img className='imgArrow1' src="./src/assets/arrow-right.png" alt="" />
+                    <img className='imgArrow1' src={ArrowImage}/>
                     </div> 
                    </button>
                    </NavLink> 
@@ -33,7 +34,7 @@ function Cards({data}){
           
           <div className='partnerContainer'>
             <div className='partnerImage'>
-               <img className='partnerImage1' src="./src/assets/plant-partner.jpg" alt="partnerimg" />
+               <img className='partnerImage1' src="https://aifarming.ca/wp-content/uploads/2025/01/plant-partner.jpg" alt="partnerimg" />
             </div>
             <div className='partnerDesc'>
                  <div className='descUp'>

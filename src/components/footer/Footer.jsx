@@ -1,11 +1,12 @@
 import './footerStyle.css'
 import { NavLink, Link } from 'react-router-dom'
 import Logo from "../../assets/AifarmLogo.png";
-import Arrow from "../../assets/arrow-right.png"
+import Arrow from "../../assets/arrow-right.png";
+import BackGroundImg from '../../assets/back.png'
 function Footer() {
     return (
         <div className="footerContainer">
-            <div className='footerHeader'>
+            <div className='footerHeader' style={{backgroundImage: `url(${BackGroundImg})`}}>
                 <div className="footeruperHeader" style={{ width: "200px", backgroundColor: "rgb(179, 230, 75)" }}>
                     <p style={{ color: "black" }}>Contact us</p>
                 </div>
