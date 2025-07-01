@@ -5,6 +5,7 @@ import './blogHomeStyle.css'
 import { PlantContext } from '../Contextapi/PlantContext'
 import { useContext, useEffect, useState } from 'react'
 import { useNavigate, NavLink } from 'react-router-dom';
+import Arrow from "../../assets/arrow-right.png";
 function Blog() {
     
     const { blogdata, setselectedBlog } = useContext(PlantContext);
@@ -84,7 +85,7 @@ function Blog() {
                                     <button className='cardButton'onClick={() => handleblogDetails(item)} style={{ gap: "20px", width:"130px" }}>
                                         <div className='buttonText'> <p>Read More</p></div>
                                         <div className='arrow1'>
-                                            <img className='imgArrow1' src="./src/assets/arrow-right.png" alt="arrow" />
+                                            <img className='imgArrow1' src={Arrow} alt="arrow" />
                                         </div>
                                     </button>
                                 </div>

@@ -3,6 +3,8 @@ import './stylenav.css'
 import { useState, useEffect } from 'react';
 import Logo from "../assets/AifarmLogo.png";
 import Arrow from "../assets/arrow-right.png";
+import Menuicon from "../assets/menuicon.png";
+import Closebtn from "../assets/close.png";
 const Navbar = ()=>{
 
    const[isMobileMenuOpen, setisMobileMenuOpen] = useState(false);
@@ -75,14 +77,14 @@ const Navbar = ()=>{
             </NavLink>
            </div>
            <div className='mobilMenu'>
-           <button onClick={toggleMobileMenu} className='btn'><img className='mobileImg' src="./src/assets/menuicon.png" /></button> 
+           <button onClick={toggleMobileMenu} className='btn'><img className='mobileImg' src={Menuicon} /></button> 
             <ul className={`navMiddle mobileNavPopout ${isMobileMenuOpen ? 'open' : ''}`}>
             <li><NavLink to="/" onClick={closeMobileMenu}>Home</NavLink></li>
             <li><NavLink to="/AboutUs" onClick={closeMobileMenu}>About us</NavLink></li>
             <li><NavLink to="/Plants" onClick={closeMobileMenu}>Plants</NavLink></li>
             <li><NavLink to="/Blog" onClick={closeMobileMenu}>Blog</NavLink></li>
             <li><NavLink to="/ContactUs" onClick={closeMobileMenu}>Contact us</NavLink></li>
-            <button onClick={closeMobileMenu} className='btn btnclose'><img className='mobileImg' src="./src/assets/close.png" /></button> 
+            <button onClick={closeMobileMenu} className='btn btnclose'><img className='mobileImg' src={Closebtn} /></button> 
             </ul>
            </div>
 
